@@ -31,4 +31,9 @@ public class Eredmeny implements Comparable<Eredmeny>{
         }
         return thisPerc.compareTo(otherPerc);
     }
+
+    @Override
+    public String toString() {
+        return String.format("%s %s", this.nev, this.reszIdo);
+    }
 }
